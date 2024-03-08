@@ -20,18 +20,3 @@ if (playerDice > computerDice) { // Se il giocatore ha un numero maggiore del co
 };
 
 console.log(winOrLoseOrDraw);
-
-// Mail
-// Chiedi all’utente la sua email,
-// controlla che sia nella lista di chi può accedere,
-// stampa un messaggio appropriato sull’esito del controllo.
-// Per la soluzione di questo esercizio NON è consentito utilizzare .includes di js!
-
-// START 
-
-// Chiediamo all'utente la sua email 
-// Controlliamo se nella nostra lista è presente quella email
-// Se la troviamo salviamo l'informazione che è vera
-// Altrimenti l'informazione rimane falsa
-// Nel primo caso che la mail è presente in lista allora diremo all'utente che può accedere
-// Nel caso in cui l'email non è presente gli diremo che non può accedere
