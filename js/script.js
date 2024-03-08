@@ -3,14 +3,23 @@
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 // Impostare due giocatori: giocatore vs computer
-let playerDice = Math.floor((Math.random() * 6) + 1);
-console.log(playerDice);
-let computerDice = Math.floor((Math.random() * 6) + 1);
-console.log(computerDice);
+const playerDice = Math.floor((Math.random() * 6) + 1); // Far uscire un numero random da 1 a 6 per il giocatore
+console.log(`Player ${playerDice}`);
 
+const computerDice = Math.floor((Math.random() * 6) + 1); // Far uscire un numero random da 1 a 6 per il computer
+console.log(`Computer ${computerDice}`);
 
-// Far uscire un numero random da 1 a 6 per il giocatore
-// Far uscire un numero random da 1 a 6 per il computer
+let winOrLoseOrDraw;
+if (playerDice > computerDice) {
+    winOrLoseOrDraw = 'Hai vinto!'
+} else if (computerDice > playerDice) {
+    winOrLoseOrDraw = 'Hai perso!'
+} else {
+    winOrLoseOrDraw = 'Pareggio'
+};
+
+console.log(winOrLoseOrDraw);
+
 // Se il giocatore ha un numero maggiore del computer allora vince
 // Se il computer ha un numero maggiore del giocatore allora vince
 // Se il giocatore e il computer hanno stesso numero è patta
