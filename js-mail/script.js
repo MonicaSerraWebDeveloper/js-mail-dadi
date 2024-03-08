@@ -16,14 +16,14 @@ let emailFound = false;
 for (let i = 0; i < listEmailUsers.length; i++) { // Controlliamo se nella nostra lista è presente quella email
     const login = listEmailUsers[i]
 
-    if (userEmail === login) {
-        emailFound = true;
+    if (userEmail === login) { 
+
+        emailFound = true; // Se la troviamo salviamo l'informazione che è vera
     }
 };
-console.log(emailFound);
 
-
-// Se la troviamo salviamo l'informazione che è vera
-// Altrimenti l'informazione rimane falsa
-// Nel primo caso che la mail è presente in lista allora diremo all'utente che può accedere
-// Nel caso in cui l'email non è presente gli diremo che non può accedere
+if (emailFound === true) { // Nel primo caso che la mail è presente in lista allora diremo all'utente che può accedere
+    alert('La mail è presente puoi accedere')
+} else {
+    alert('Mi dispiace, non puoi accedere') // Nel caso in cui l'email non è presente gli diremo che non può accedere
+};
