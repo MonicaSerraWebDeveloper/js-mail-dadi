@@ -9,6 +9,8 @@
 // Chiediamo all'utente la sua email 
 const userEmail = prompt('Scrivi qui la tua email per accedere')
 
+const listEmailUsers = ['topolino@mail.it', 'pippo@mail.it', 'paperino@mail.it', 'pluto@mail.it', 'minnie@mail.it'];
+
 // Creiamo la nostra lista di email 
 // Controlliamo se nella nostra lista è presente quella email
 // Se la troviamo salviamo l'informazione che è vera
