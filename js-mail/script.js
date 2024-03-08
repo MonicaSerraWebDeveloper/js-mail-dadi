@@ -9,10 +9,20 @@
 // Chiediamo all'utente la sua email 
 const userEmail = prompt('Scrivi qui la tua email per accedere')
 
+// Creiamo la nostra lista di email 
 const listEmailUsers = ['topolino@mail.it', 'pippo@mail.it', 'paperino@mail.it', 'pluto@mail.it', 'minnie@mail.it'];
 
-// Creiamo la nostra lista di email 
-// Controlliamo se nella nostra lista è presente quella email
+let emailFound = false; 
+for (let i = 0; i < listEmailUsers.length; i++) { // Controlliamo se nella nostra lista è presente quella email
+    const login = listEmailUsers[i]
+
+    if (userEmail === login) {
+        emailFound = true;
+    }
+};
+console.log(emailFound);
+
+
 // Se la troviamo salviamo l'informazione che è vera
 // Altrimenti l'informazione rimane falsa
 // Nel primo caso che la mail è presente in lista allora diremo all'utente che può accedere
